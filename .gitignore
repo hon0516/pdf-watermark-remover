@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.wm-tasks/
+build/
+dist/
+*.egg-info/
+*.pdf
+*.png
+.DS_Store

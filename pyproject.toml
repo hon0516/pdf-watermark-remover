@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-watermark-remover"
+version = "0.1.0"
+description = "A local-first web tool for removing recognizable tiled Pattern watermarks from PDFs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "hon0516" }]
+dependencies = ["pypdf>=5,<7"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Web Environment",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+pdf-watermark-remover = "watermark_remover.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/hon0516/pdf-watermark-remover"
+Repository = "https://github.com/hon0516/pdf-watermark-remover"
+Issues = "https://github.com/hon0516/pdf-watermark-remover/issues"
+
+[tool.setuptools.packages.find]
+include = ["watermark_remover*"]
+
+[tool.setuptools.package-data]
+"watermark_remover.web" = ["static/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
