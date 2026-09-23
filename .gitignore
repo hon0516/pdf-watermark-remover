@@ -9,4 +9,5 @@ dist/
 *.egg-info/
 *.pdf
 *.png
+!docs/images/*.png
 .DS_Store

@@ -4,6 +4,8 @@
 
 一个在本机运行的 PDF 工具：导入 PDF，检查可识别的平铺 Pattern 水印候选，确认后导出新文件。PDF 内容在本机处理，不会上传到远程服务。原文件不会被覆盖。
 
+![PDF 去水印工具演示](docs/images/app-demo.png)
+
 > **当前版本范围**：0.1 版只自动移除页面内容流末尾、结构可识别的裁剪式 Pattern 平铺图层。扫描件水印、背景里融合的水印、普通文字/图片/透明组水印，以及结构不同的 Pattern 暂不支持。未识别到水印不代表 PDF 没有水印。
 
 ## 安装和启动
@@ -66,3 +68,5 @@ python -m watermark_remover --host 127.0.0.1 --port 8765
 ## 许可证
 
 本项目采用 MIT License，详见 [LICENSE](LICENSE)。
+
+版本记录见 [CHANGELOG.md](CHANGELOG.md)。

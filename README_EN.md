@@ -4,6 +4,8 @@
 
 A local-first PDF utility. Import a PDF, review recognizable tiled Pattern watermark candidates, confirm, and export a new file. PDF contents are processed locally and are not uploaded to a remote service. The original file is never overwritten.
 
+![PDF watermark remover demo](docs/images/app-demo.png)
+
 > **Current scope**: Version 0.1 only removes a recognizable clipped Pattern tiling block at the end of a page content stream. It does not remove watermarks baked into scans, watermarks merged into page backgrounds, ordinary text/image/transparency-group watermarks, or structurally different Pattern objects. No detection result does not mean a PDF is watermark-free.
 
 ## Install and run
@@ -66,3 +68,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Vulnerability reporting instructions are
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
